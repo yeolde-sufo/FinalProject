@@ -39,12 +39,12 @@
             pictureBox2 = new PictureBox();
             label1 = new Label();
             panel4 = new Panel();
+            stdntBtn = new RadioButton();
             label5 = new Label();
             label4 = new Label();
             panel5 = new Panel();
-            label6 = new Label();
-            stdntBtn = new RadioButton();
             rglrBtn = new RadioButton();
+            label6 = new Label();
             label7 = new Label();
             panel6 = new Panel();
             nrmlBtn = new RadioButton();
@@ -53,13 +53,13 @@
             prmmBtn = new RadioButton();
             label9 = new Label();
             panel8 = new Panel();
+            totalTxt = new Label();
+            label14 = new Label();
+            dscntTxt = new Label();
+            distFeeTxt = new Label();
+            label11 = new Label();
             label10 = new Label();
             bookbtn = new Button();
-            label11 = new Label();
-            distFeeTxt = new Label();
-            dscntTxt = new Label();
-            label14 = new Label();
-            totalTxt = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -180,6 +180,16 @@
             panel4.Size = new Size(173, 39);
             panel4.TabIndex = 3;
             // 
+            // stdntBtn
+            // 
+            stdntBtn.AutoSize = true;
+            stdntBtn.Location = new Point(143, 12);
+            stdntBtn.Name = "stdntBtn";
+            stdntBtn.Size = new Size(17, 16);
+            stdntBtn.TabIndex = 6;
+            stdntBtn.TabStop = true;
+            stdntBtn.UseVisualStyleBackColor = true;
+            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -210,26 +220,6 @@
             panel5.Size = new Size(173, 39);
             panel5.TabIndex = 4;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(5, 12);
-            label6.Name = "label6";
-            label6.Size = new Size(83, 17);
-            label6.TabIndex = 6;
-            label6.Text = "REGULAR";
-            // 
-            // stdntBtn
-            // 
-            stdntBtn.AutoSize = true;
-            stdntBtn.Location = new Point(143, 12);
-            stdntBtn.Name = "stdntBtn";
-            stdntBtn.Size = new Size(17, 16);
-            stdntBtn.TabIndex = 6;
-            stdntBtn.TabStop = true;
-            stdntBtn.UseVisualStyleBackColor = true;
-            // 
             // rglrBtn
             // 
             rglrBtn.AutoSize = true;
@@ -239,6 +229,16 @@
             rglrBtn.TabIndex = 7;
             rglrBtn.TabStop = true;
             rglrBtn.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(5, 12);
+            label6.Name = "label6";
+            label6.Size = new Size(83, 17);
+            label6.TabIndex = 6;
+            label6.Text = "REGULAR";
             // 
             // label7
             // 
@@ -324,6 +324,58 @@
             panel8.Size = new Size(250, 284);
             panel8.TabIndex = 9;
             // 
+            // totalTxt
+            // 
+            totalTxt.AutoSize = true;
+            totalTxt.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            totalTxt.ForeColor = SystemColors.Highlight;
+            totalTxt.Location = new Point(100, 219);
+            totalTxt.Name = "totalTxt";
+            totalTxt.Size = new Size(33, 34);
+            totalTxt.TabIndex = 15;
+            totalTxt.Text = "0";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.ForeColor = SystemColors.Highlight;
+            label14.Location = new Point(4, 175);
+            label14.Name = "label14";
+            label14.Size = new Size(218, 23);
+            label14.TabIndex = 14;
+            label14.Text = "Total Estimated Fare:";
+            // 
+            // dscntTxt
+            // 
+            dscntTxt.AutoSize = true;
+            dscntTxt.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dscntTxt.Location = new Point(4, 118);
+            dscntTxt.Name = "dscntTxt";
+            dscntTxt.Size = new Size(159, 17);
+            dscntTxt.TabIndex = 13;
+            dscntTxt.Text = "Passenger Discount:";
+            // 
+            // distFeeTxt
+            // 
+            distFeeTxt.AutoSize = true;
+            distFeeTxt.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            distFeeTxt.Location = new Point(4, 82);
+            distFeeTxt.Name = "distFeeTxt";
+            distFeeTxt.Size = new Size(108, 17);
+            distFeeTxt.TabIndex = 12;
+            distFeeTxt.Text = "Distance Fee:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Location = new Point(4, 42);
+            label11.Name = "label11";
+            label11.Size = new Size(126, 17);
+            label11.TabIndex = 11;
+            label11.Text = "Base Rate: 100₱";
+            // 
             // label10
             // 
             label10.AutoSize = true;
@@ -339,64 +391,12 @@
             bookbtn.BackColor = SystemColors.MenuHighlight;
             bookbtn.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bookbtn.ForeColor = SystemColors.ButtonHighlight;
-            bookbtn.Location = new Point(128, 717);
+            bookbtn.Location = new Point(150, 717);
             bookbtn.Name = "bookbtn";
             bookbtn.Size = new Size(169, 43);
             bookbtn.TabIndex = 10;
             bookbtn.Text = "BOOK NOW!";
             bookbtn.UseVisualStyleBackColor = false;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(4, 42);
-            label11.Name = "label11";
-            label11.Size = new Size(126, 17);
-            label11.TabIndex = 11;
-            label11.Text = "Base Rate: 100₱";
-            // 
-            // distFeeTxt
-            // 
-            distFeeTxt.AutoSize = true;
-            distFeeTxt.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            distFeeTxt.Location = new Point(4, 82);
-            distFeeTxt.Name = "distFeeTxt";
-            distFeeTxt.Size = new Size(108, 17);
-            distFeeTxt.TabIndex = 12;
-            distFeeTxt.Text = "Distance Fee:";
-            // 
-            // dscntTxt
-            // 
-            dscntTxt.AutoSize = true;
-            dscntTxt.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dscntTxt.Location = new Point(4, 118);
-            dscntTxt.Name = "dscntTxt";
-            dscntTxt.Size = new Size(159, 17);
-            dscntTxt.TabIndex = 13;
-            dscntTxt.Text = "Passenger Discount:";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.ForeColor = SystemColors.Highlight;
-            label14.Location = new Point(4, 175);
-            label14.Name = "label14";
-            label14.Size = new Size(218, 23);
-            label14.TabIndex = 14;
-            label14.Text = "Total Estimated Fare:";
-            // 
-            // totalTxt
-            // 
-            totalTxt.AutoSize = true;
-            totalTxt.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            totalTxt.ForeColor = SystemColors.Highlight;
-            totalTxt.Location = new Point(100, 219);
-            totalTxt.Name = "totalTxt";
-            totalTxt.Size = new Size(33, 34);
-            totalTxt.TabIndex = 15;
-            totalTxt.Text = "0";
             // 
             // Form1
             // 
@@ -416,7 +416,7 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Ride";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
